@@ -26,13 +26,17 @@
     }
 
     .action-group {
-      .go-flex;
+      .go-flex(@dir: column);
+      @media @tablet {
+        .go-flex;
+        margin: 0 .5em;
+      }
 
       button {
         .go-flex;
         outline: none;
         border: none;
-        margin: 0 .5em;
+        margin: .5em;
         padding: 1em;
         font-size: 2.4rem;
         border-radius: .5em;
@@ -54,15 +58,30 @@
   margin-top: 1em;
 
   .box-group {
-    .go-flex(@ali-items: space-between);
+    .go-flex(@ali-items: space-between, @dir: column);
+    @media @tablet {
+      .go-flex(@ali-items: space-between);
+    }
 
     .text-content {
       .go-flex(@dir: column);
-      width: 49%;
+      width: 98%;
       padding: 0 .5em;
+      order: 2;
+
+      @media @tablet {
+        width: 49%;
+        order: 0;
+      }
 
       h3 {
-        margin-bottom: 1em;
+        margin-bottom: 0;
+        margin-top: 1em;
+
+        @media @tablet {
+          margin-top: 1em;
+          margin-top: 0;
+        }
       }
 
       button {
@@ -87,59 +106,13 @@
     }
 
     img {
-      width: 49%;
+      width: 98%;
       border-radius: .5em;
-    }
-  }
-}
+      order: 1;
 
-.bottom-container {
-  .go-flex(@ali-items: flex-start, @dir: column);
-  margin: 1em 0;
-
-  h3 {
-    margin-bottom: 1em;
-    padding: 0 .5em;
-  }
-
-  .box-group {
-    .go-flex(@just-content: space-evenly);
-    position: relative;
-
-    .box {
-      .go-flex(@dir: column);
-      width: 32%;
-      position: relative;
-      background-color: lighten(@gray-scale, 50%);
-      border-radius: .5em;
-
-      img {
-        width: 100%;
-        border-radius: .5em;
-      }
-
-      h3 {
-        position: absolute;
-        top: .2em;
-        left: .2em;
-        color: @white-color;
-      }
-
-      .rating-info {
-        .go-flex(@just-content: space-between);
-        color: @accents-secondary;
-        margin: .5em 0;
-
-        .dp {
-          width: 5em;
-          border-radius: 50%;
-          border: .2em solid @white-color;
-        }
-
-        span {
-          margin: 0 1em;
-          font-size: 1.8rem;
-        }
+      @media @tablet {
+        width: 49%;
+        order: 0;
       }
     }
   }

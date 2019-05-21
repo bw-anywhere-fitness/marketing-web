@@ -10,6 +10,7 @@
   <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js" async></script>
   <script src="js/main.js" async></script>
+  <script src="components/carousel/Carousel.js" async></script>
 </head>
 <body>
   <header>
@@ -75,7 +76,8 @@
     <section class="bottom-container">
       <h3>Popular Classes</h3>
       <div class="box-group">
-        <div class="box">
+        <button class="previous"><i class="fas fa-arrow-left"></i></button>
+        <div data-pos="1" class="box">
           <h3>Yoka</h3>
           <img src="img/fitness-box1.jpg" alt="Yoka class photo">
           <div class="rating-info">
@@ -89,7 +91,7 @@
             </span>
           </div>
         </div>
-        <div class="box">
+        <div data-pos="2" class="box show">
           <h3>Insanity</h3>
           <img src="img/fitness-box2.jpg" alt="Insanity class photo">
           <div class="rating-info">
@@ -102,7 +104,7 @@
             </span>
           </div>
         </div>
-        <div class="box">
+        <div data-pos="3" class="box">
           <h3>Ripped</h3>
           <img src="img/fitness-box3.jpg" alt="Ripped class photo">
           <div class="rating-info">
@@ -116,6 +118,7 @@
             </span>
           </div>
         </div>
+        <button class="next"><i class="fas fa-arrow-right"></i></button>
       </div>
     </section>
   </main>
