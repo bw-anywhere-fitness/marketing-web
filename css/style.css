@@ -415,3 +415,15 @@ p {
   margin: 0 1em;
   font-size: 1.8rem;
 }
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 2.5em 0;
+  background-color: #00AFFF;
+  color: #FFFFFF;
+}
+footer span {
+  font-size: 1.8rem;
+}
