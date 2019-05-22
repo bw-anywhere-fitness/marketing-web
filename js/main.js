@@ -5,11 +5,11 @@ document.querySelector(`.menu`).addEventListener(`click`, (e) => {
   menu.classList.toggle(`open`);
   if (menu.classList.contains(`open`)) {
     TweenMax.to(menu, 1.5, {
-      x:350, ease:Bounce.easeOut,
+      x:300, ease:Bounce.easeOut,
     });
   } else {
     TweenMax.to(menu, 2, {
-      x:-350,
+      x:-300,
     });
   }
 });
