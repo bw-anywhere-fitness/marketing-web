@@ -480,6 +480,14 @@ p {
   border: 1px solid #FFFFFF;
   background-color: #00AFFF;
 }
+.header-content .text-content .action-group a {
+  text-decoration: none;
+  color: inherit;
+}
+.header-content .text-content .action-group a:link,
+.header-content .text-content .action-group a:visited {
+  color: #FFFFFF;
+}
 .top-container {
   display: flex;
   justify-content: center;
