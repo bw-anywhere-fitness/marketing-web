@@ -554,6 +554,14 @@ p {
   color: #FFFFFF;
   background-color: #125370;
 }
+.top-container .box-group .text-content button a {
+  text-decoration: none;
+  color: inherit;
+}
+.top-container .box-group .text-content button a:link,
+.top-container .box-group .text-content button a:visited {
+  color: inherit;
+}
 .top-container .box-group img {
   width: 98%;
   border-radius: 0.5em;
