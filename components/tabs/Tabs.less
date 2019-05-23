@@ -39,12 +39,10 @@
     width: 100%;
     padding: 1em;
 
-    .tab-item {
-      .go-flex(@just-content: flex-start, @ali-items: flex-start, @dir: column);
-      align-self: center;
-      justify-self: center;
-      border-radius: 1em;
-      box-shadow: 2px 2px 2px lighten(@gray-scale, 15%);
+    a {
+      text-decoration: none;
+      color: inherit;
+      .go-flex;
       width: 98%;
       margin-bottom: 1em;
       @media @tablet {
@@ -53,6 +51,17 @@
       @media @desktop {
         width: 32%;
       }
+      &:link, &:visited {
+        color: inherit;
+      }
+    }
+
+    .tab-item {
+      .go-flex(@just-content: flex-start, @ali-items: flex-start, @dir: column);
+      align-self: center;
+      justify-self: center;
+      border-radius: 1em;
+      box-shadow: 2px 2px 2px lighten(@gray-scale, 15%);
 
       img {
         width: 100%;
