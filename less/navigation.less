@@ -1,7 +1,7 @@
 .navigation {
   .go-flex(@just-content: space-between, @dir: row-reverse);
   background-color: @nav-bg;
-  height: 6em;
+  height: 4em;
   width: 100%;
   font-size: 1.8rem;
   color: @nav-font;
@@ -11,6 +11,7 @@
 
   @media @tablet {
     .go-flex(space-evenly);
+    height: 6em;
   }
 
   .nav-brand {
@@ -81,7 +82,7 @@
       .go-flex(@just-content: flex-start, @dir: column);
       position: fixed;
       z-index: 99999;
-      top: 6em;
+      top: 4em;
       left: -300px;
       width: 300px;
       height: 100% - 6em;
@@ -116,6 +117,10 @@
             &:link, &:visited {
               color: @nav-font;
             }
+          }
+
+          .active {
+            border-bottom: 2px solid @white-color;
           }
   
           &:hover {

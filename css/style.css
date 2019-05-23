@@ -138,7 +138,12 @@ body {
   color: #000000;
 }
 body {
-  margin-top: 6em;
+  margin-top: 4em;
+}
+@media (min-width: 600px) {
+  body {
+    margin-top: 6em;
+  }
 }
 h1,
 h2,
@@ -177,7 +182,7 @@ p {
   align-items: center;
   flex-direction: row-reverse;
   background-color: #00AFFF;
-  height: 6em;
+  height: 4em;
   width: 100%;
   font-size: 1.8rem;
   color: #FFFFFF;
@@ -191,6 +196,7 @@ p {
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
+    height: 6em;
   }
 }
 .navigation .nav-brand {
@@ -287,7 +293,7 @@ p {
   flex-direction: column;
   position: fixed;
   z-index: 99999;
-  top: 6em;
+  top: 4em;
   left: -300px;
   width: 300px;
   height: 94%;
@@ -343,6 +349,9 @@ p {
 .navigation nav .link-group .nav-items li a:link,
 .navigation nav .link-group .nav-items li a:visited {
   color: #FFFFFF;
+}
+.navigation nav .link-group .nav-items li .active {
+  border-bottom: 2px solid #FFFFFF;
 }
 .navigation nav .link-group .nav-items li:hover {
   border: 1px solid #FFFFFF;
@@ -424,9 +433,14 @@ p {
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
   background-size: 100% 100%;
-  height: 94vh;
+  height: 96vh;
   color: #FFFFFF;
   background-color: #00AFFF;
+}
+@media (min-width: 600px) {
+  .header-content {
+    height: 94vh;
+  }
 }
 .header-content .text-content {
   display: flex;
@@ -440,6 +454,7 @@ p {
   text-align: center;
 }
 .header-content .text-content h1 {
+  padding-top: 0em;
   font-size: 4.8rem;
   font-weight: bolder;
 }
@@ -553,6 +568,14 @@ p {
   border: none;
   color: #FFFFFF;
   background-color: #125370;
+}
+.top-container .box-group .text-content button a {
+  text-decoration: none;
+  color: inherit;
+}
+.top-container .box-group .text-content button a:link,
+.top-container .box-group .text-content button a:visited {
+  color: inherit;
 }
 .top-container .box-group img {
   width: 98%;
@@ -747,6 +770,30 @@ p {
   width: 100%;
   padding: 1em;
 }
+.team-group .tab-content a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 98%;
+  margin-bottom: 1em;
+}
+@media (min-width: 600px) {
+  .team-group .tab-content a {
+    width: 49%;
+  }
+}
+@media (min-width: 800px) {
+  .team-group .tab-content a {
+    width: 32%;
+  }
+}
+.team-group .tab-content a:link,
+.team-group .tab-content a:visited {
+  color: inherit;
+}
 .team-group .tab-content .tab-item {
   display: flex;
   justify-content: flex-start;
@@ -756,18 +803,6 @@ p {
   justify-self: center;
   border-radius: 1em;
   box-shadow: 2px 2px 2px #848484;
-  width: 98%;
-  margin-bottom: 1em;
-}
-@media (min-width: 600px) {
-  .team-group .tab-content .tab-item {
-    width: 49%;
-  }
-}
-@media (min-width: 800px) {
-  .team-group .tab-content .tab-item {
-    width: 32%;
-  }
 }
 .team-group .tab-content .tab-item img {
   width: 100%;

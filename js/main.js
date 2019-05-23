@@ -33,7 +33,7 @@ window.addEventListener(`load`, e => {
       } else {
         clearInterval(animate);
       }
-    }, 200);
+    }, 50);
   }
 });
 
