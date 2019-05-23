@@ -424,7 +424,7 @@ p {
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
   background-size: 100% 100%;
-  height: 100vh;
+  height: 94vh;
   color: #FFFFFF;
   background-color: #00AFFF;
 }
@@ -480,6 +480,14 @@ p {
   border: 1px solid #FFFFFF;
   background-color: #00AFFF;
 }
+.header-content .text-content .action-group a {
+  text-decoration: none;
+  color: inherit;
+}
+.header-content .text-content .action-group a:link,
+.header-content .text-content .action-group a:visited {
+  color: #FFFFFF;
+}
 .top-container {
   display: flex;
   justify-content: center;
@@ -517,12 +525,11 @@ p {
   }
 }
 .top-container .box-group .text-content h3 {
-  margin-bottom: 0;
+  margin-bottom: 1em;
   margin-top: 1em;
 }
 @media (min-width: 600px) {
   .top-container .box-group .text-content h3 {
-    margin-top: 1em;
     margin-top: 0;
   }
 }
